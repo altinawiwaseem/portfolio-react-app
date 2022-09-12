@@ -1,0 +1,40 @@
+.profile-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-image: url(../../assets/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.h-left-profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*  justify-content: space-between; */
+  height: 100%;
+  align-items: center;
+  flex: 1.2;
+}
+.h-right-profile {
+  flex: 0.8;
+  width: 100%;
+  background-color: #5bc5fe;
+  border: 1px black solid;
+}
+.profile-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-details {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}

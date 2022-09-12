@@ -1,0 +1,78 @@
+.resume-contain {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resume-card {
+  display: flex;
+  height: 360px;
+  width: 1000px;
+  justify-content: space-between;
+}
+.resume-bullet {
+  width: 320px;
+  box-shadow: 15px 0 9px -15px #1f2235;
+}
+.bullet-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.bullet-icons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  background-color: #1f2235;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+  width: 2rem;
+  align-items: center;
+}
+
+.bullets {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 1.1rem;
+  position: relative;
+  width: 80%;
+}
+.resume-bullet-details {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.bullet {
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+.bullet-active .highlight-colum {
+  background-color: #1f2235;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  left: -35px;
+  z-index: -9;
+  border-radius: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bullet-active {
+  color: white;
+}
