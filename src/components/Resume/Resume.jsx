@@ -1,10 +1,46 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Resume.css";
 import { FaGraduationCap, FaHistory } from "react-icons/fa";
 import { GiLaptop } from "react-icons/gi";
 import { GoProject } from "react-icons/go";
 
 const Resume = () => {
+  /* const ScrollLink = scroll.ScrollLink; */
+
+  const education = useRef(null);
+  const workHistory = useRef(null);
+  const programming = useRef(null);
+  const project = useRef(null);
+
+  const toEducation = () => {
+    education.current?.scrollIntoView({ behavior: "smooth" });
+
+    return;
+  };
+  const toHistory = () => {
+    workHistory.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+    return;
+  };
+  const toProgramming = () => {
+    programming.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+    return;
+  };
+  const toProjects = () => {
+    project.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+    return;
+  };
+  const activeClass = (e) => {
+    console.log(e.nativeEvent);
+    e.nativeEvent.path[0].classList.remove("active");
+    e.target.classList.add("active");
+    /*  el */
+  };
   return (
     <div className="resume-contain">
       <div className="resume-header">
@@ -16,33 +52,36 @@ const Resume = () => {
       </div>
       <div className="resume-card">
         <div className="resume-bullet">
-          <div className="bullet-container">
+          <div className="bullet-container" onClick={activeClass}>
             <div className="bullet-icons">
-              <FaGraduationCap />
-              <FaHistory />
-              <GiLaptop />
-              <GoProject />
+              <FaGraduationCap onClick={toEducation} />
+              <FaHistory onClick={toHistory} />
+              <GiLaptop onClick={toProgramming} />{" "}
+              <GoProject onClick={toProjects} />
             </div>
             <div className="bullets">
-              <div className="bullet bullet-active">
-                Education <span className="highlight-colum"></span>
+              <div className="bullet active" onClick={toEducation}>
+                Education <span className="highlight-column"></span>
               </div>
-              <div className="bullet">
-                Work History <span className="highlight-colum"></span>
+              <div className="bullet" onClick={toHistory}>
+                Work History
+                <span className="highlight-column"></span>
               </div>
-              <div className="bullet ">
+              <div className="bullet " onClick={toProgramming}>
                 {" "}
-                <span className="highlight-colum"></span>Programming Skills
+                <span className="highlight-column"></span>
+                Programming Skills
               </div>
-              <div className="bullet">
-                Projects <span className="highlight-colum"></span>
+              <div className="bullet" onClick={toProjects}>
+                Projects <span className="highlight-column"></span>
               </div>
             </div>
           </div>
         </div>
         <div className="resume-bullet-details">
           <div className="resume-details">
-            <div className="resume-screen-container">
+            {/* Education */}
+            <div className="resume-screen-container" ref={education}>
               <div className="e-resume-heading">
                 <div className="main-heading">
                   <div className="heading-bullet"></div>
@@ -78,9 +117,19 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <div className="resume-screen-container"></div>
-            <div className="resume-screen-container"></div>
-            <div className="resume-screen-container"></div>
+            {/* Work History */}
+            <div className="resume-screen-container" ref={workHistory}>
+              Work History
+            </div>
+            {/* Programming Skills */}
+            <div className="resume-screen-container" ref={programming}>
+              {" "}
+              Programming Skills
+            </div>
+            {/* Projects */}
+            <div className="resume-screen-container" ref={project}>
+              Projects
+            </div>
           </div>
         </div>
       </div>
