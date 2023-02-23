@@ -1,57 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@font-face {
-  font-family: "Poppins Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Poppins SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins ExtraBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Thin";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
-}
-
 * {
   outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -104,10 +57,10 @@ body ::-webkit-scrollbar-thumb {
   background-color: #1f2235;
 }
 /* @media only screen and (max-width: 414px) {
-.primary-btn {
-font-size: 13px;
-}
-} */
+  .primary-btn {
+  font-size: 13px;
+  }
+  } */
 
 .primary-btn:hover {
   color: aliceblue;

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import Typewriter from "typewriter-effect";

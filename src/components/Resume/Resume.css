@@ -1,97 +1,95 @@
-.resume-contain {
-  height: 100vh;
-  width: 100vw;
+.resume-main-container {
+  border: 10px red solid;
+}
+/* .resume-header {
+  height: 10%;
+} */
+.resume-content-container {
+  width: 100%;
+  height: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
-
-.resume-card {
-  display: flex;
-  height: 360px;
-  width: 1000px;
-  justify-content: space-between;
-}
-.resume-screen-container {
+.r-right {
   height: 100%;
-}
-.resume-bullet {
-  width: 320px;
-  box-shadow: 15px 0 9px -15px #1f2235;
-  height: 100%;
-}
-.bullet-container {
-  display: flex;
-  height: 100%;
-  justify-content: space-evenly;
+  flex: 0.7;
+  overflow-y: hidden;
+  margin: 1rem;
   width: 100%;
 }
-
-.bullet-icons {
-  display: flex;
-  flex-direction: column;
+.r-details-container {
   height: 100%;
-  justify-content: space-around;
-  background-color: #1f2235;
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  z-index: 1;
-  width: 2rem;
-  align-items: center;
-  cursor: pointer;
-}
-
-.bullets {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  font-size: 1.1rem;
-  position: relative;
-  width: 80%;
-}
-.resume-bullet-details {
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  /* height: 100%; */
-}
-.resume-details {
-  height: 100%;
-}
-.bullet {
-  position: relative;
-  width: 100%;
+  justify-self: center;
   justify-content: space-around;
-  align-content: center;
-  cursor: pointer;
-}
-.resume-screen-container {
-  /* height: 110%; */
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
-.active .highlight-column {
-  background-color: #1f2235;
-  width: 100%;
-  height: 35px;
-  position: absolute;
-  left: -35px;
-  z-index: -9;
-  border-radius: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.active {
+.r-left {
+  height: 100%;
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 15px 0 9px -15px #1f2235;
+  min-width: 250px;
+}
+.r-bullet-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1f2235;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  width: 30px;
+  transition: width 0.6s ease;
+}
+
+.logo {
+  z-index: 11;
   color: white;
+  height: 16px;
+  margin: 0 30px 0 0;
+}
+.bullet-label {
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: "Poppins SemiBold";
+}
+.bullet-icons {
+  width: 34px;
+  height: 100%;
+  z-index: 1;
+  background-color: #1f2235;
+  position: absolute;
+}
+
+.selected {
+  width: 95%;
+  color: white;
+  border-radius: 20px;
+}
+
+.r-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #ff7200;
+}
+@media only screen and (max-width: 670px) {
+  .resume-content-container {
+    flex-direction: column;
+    height: 100vh;
+    font-size: 14px;
+    width: 90vw;
+    overflow-y: hidden;
+  }
+  .bullet-icons {
+    height: 90%;
+  }
 }
