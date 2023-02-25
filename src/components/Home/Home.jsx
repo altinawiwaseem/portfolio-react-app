@@ -13,20 +13,33 @@ const Home = () => {
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
-              <div className="colz-icon">
-                <a href="https://www.instagram.com/waseemdam/" target="_blank">
+              <div className="colz-icon flex ">
+                <a
+                  href="https://www.instagram.com/waseemdam/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaInstagram />
                 </a>
-                <a href="https://github.com/altinawiwaseem" target="_blank">
+                <a
+                  href="https://github.com/altinawiwaseem"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithubSquare />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/waseem-altinawi/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaLinkedin />
                 </a>
-                <a href="https://vercel.com/altinawiwaseem" target="_blank">
+                <a
+                  href="https://vercel.com/altinawiwaseem"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SiVercel />
                 </a>
               </div>
@@ -37,8 +50,8 @@ const Home = () => {
                 Hello, I'M <span className="highlighted-text"> </span>
               </span>
             </div>
-            <div className="profile-details-role">
-              <span className="primary-text">
+            <div className="profile-details-role min-w-min">
+              <span className="primary-text min-w-min ">
                 <h1>
                   {" "}
                   <Typewriter

@@ -15,13 +15,14 @@ function Resume() {
 
   return (
     <div className="resume-main-container h-screen width-screen flex justify-between items-center flex-col px-12 pb-12 box-border ">
-      <div className="resume-header"></div>
-      <h1 className="text-4xl font-bold underline ">Resume</h1>
-      <span className="underline">
-        <span className="underline-node"></span>
-      </span>
+      <div className="resume-header">
+        <h1 className="text-4xl font-bold  ">Resume</h1>
+        <span className="underline w-full  border-1 block border-black relative mt-3 h-1 bg-black">
+          <span className="underline-node "></span>
+        </span>
+      </div>
       {/* description container */}
-      <div className="resume-content-container w-screen h-screen text-sm  md:h-3/4 flex flex-col  sm:flex-row items-center overflow-y-hidden	">
+      <div className="resume-content-container w-screen h-screen text-sm md:w-4/5 md:h-3/4 flex flex-col  sm:flex-row items-center overflow-y-hidden	">
         {/* resume left box */}
         <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%] md:w-[20%] min-w-[250px] ">
           <div className="bullet-icons rounded-3xl absolute z-1 sm:h-[80%] md:h-full h-full w-[34px] "></div>
