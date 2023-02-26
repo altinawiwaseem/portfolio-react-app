@@ -3,6 +3,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        "poppins-light": ["Poppins Light", "sans-serif"],
+        "poppins-thin": ["Poppins Thin", "sans-serif"],
+        "poppins-regular": ["Poppins Regular", "sans-serif"],
+        "poppins-medium": ["Poppins Medium", "sans-serif"],
+        "poppins-semibold": ["Poppins SemiBold", "sans-serif"],
+        "poppins-bold": ["Poppins Bold", "sans-serif"],
+        "poppins-extrabold": ["Poppins ExtraBold", "sans-serif"],
+      },
       colors: {
         "light-blue": " #04c3ff",
         "light-blue-shadow": "rgb(69 211 255 / 27%)",

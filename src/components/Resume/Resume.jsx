@@ -22,9 +22,9 @@ function Resume() {
         </span>
       </div>
       {/* description container */}
-      <div className="resume-content-container w-screen h-screen text-sm md:w-4/5 md:h-3/4 flex flex-col  sm:flex-row items-center overflow-y-hidden	">
+      <div className="resume-content-container w-screen h-screen md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden	">
         {/* resume left box */}
-        <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%] md:w-[20%] min-w-[250px] ">
+        <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%] md:w-[35%] min-w-[250px] ">
           <div className="bullet-icons rounded-3xl absolute z-1 sm:h-[80%] md:h-full h-full w-[34px] "></div>
 
           {resumeData.map((item, i) => (
@@ -32,7 +32,7 @@ function Resume() {
               key={i}
               id={i}
               onClick={() => handleBoxClick(i)}
-              className={`r-bullet-box flex items-center cursor-pointer my-1 md:my-8 sm:my-8 px-2 py-1 rounded-full w-[30px] bg-primary-color ${
+              className={`r-bullet-box flex items-center cursor-pointer my-1 md:my-8 sm:my-8 px-2 sm:h-8 py-1 rounded-full w-[30px] bg-primary-color ${
                 i == selected ? "selected" : ""
               }`}
             >
@@ -47,7 +47,7 @@ function Resume() {
         </div>
         {/* resume right box */}
         <div
-          className="resume-right w-full h-full  overflow-y-hidden m-2 "
+          className="resume-right pt-2 w-full h-full  overflow-y-hidden sm:m-2 min-w-[330px] "
           ref={targetedBox}
         >
           {/* mapping the resume data content */}
@@ -56,22 +56,25 @@ function Resume() {
               key={i}
               id={i}
               className={
-                "resume-details-container h-full max-w-[700px] flex flex-col p-4 justify-evenly "
+                "resume-details-container h-full max-w-[800px] flex flex-col sm:p-4 justify-evenly"
               }
             >
               {item.title.map((el, i) => (
-                <div
-                  key={i}
-                  className="resume-element-detail p-2 w-full  flex justify-between"
-                >
-                  <div className="resume-element-header flex justify-between w-full">
-                    <div className="flex w-full">
-                      <span className="resume-circle w-4 h-4 rounded-full	mr-3 bg-dark-orange"></span>
-                      <div className="w-[80%] ">
-                        <h3 className="mb-4 text-justify ">
+                <div key={i} className="resume-element-detail  w-full  ">
+                  <div className="resume-element-header flex  justify-between w-full ">
+                    <div className="flex w-full ">
+                      <span className="resume-circle w-4 h-4 rounded-full	mr-4  bg-dark-orange "></span>
+                      <div className="sm:w-[80%] w-full">
+                        <h3
+                          className={` sm:mb-4 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base   ${
+                            el.detail ? "text-dark-orange" : "text-black"
+                          } `}
+                        >
                           {el.headerDescription}
                         </h3>
-                        <p className="text-justify ">{el.detail}</p>
+                        <p className="text-justify p-1 font-poppins-normal sm:font-poppins-medium text-base ">
+                          {el.detail}
+                        </p>
                       </div>
                     </div>
 
