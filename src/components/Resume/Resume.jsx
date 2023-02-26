@@ -18,7 +18,7 @@ function Resume() {
       <div className="resume-header">
         <h1 className="text-4xl font-bold  ">Resume</h1>
         <span className="underline w-full  border-1 block border-black relative mt-3 h-1 bg-black">
-          <span className="underline-node "></span>
+          <span className="underline-node bg-dark-orange"></span>
         </span>
       </div>
       {/* description container */}
@@ -32,7 +32,7 @@ function Resume() {
               key={i}
               id={i}
               onClick={() => handleBoxClick(i)}
-              className={`r-bullet-box flex items-center cursor-pointer my-1 md:my-8 sm:my-8 px-2 py-1 rounded-full w-[30px]  ${
+              className={`r-bullet-box flex items-center cursor-pointer my-1 md:my-8 sm:my-8 px-2 py-1 rounded-full w-[30px] bg-primary-color ${
                 i == selected ? "selected" : ""
               }`}
             >
@@ -56,18 +56,31 @@ function Resume() {
               key={i}
               id={i}
               className={
-                "r-details-container h-full max-w-[700px] flex flex-col p-4 justify-start "
+                "resume-details-container h-full max-w-[700px] flex flex-col p-4 justify-evenly "
               }
             >
               {item.title.map((el, i) => (
-                <div key={i} className="resume-element-detail p-2 ">
-                  <div className="resume-element-header">
-                    <span className="r-circle w-8 h-8 rounded-full	"></span>
-                    <h3>{el.headerDescription}</h3>
-                    <h4>{el.date}</h4>
-                  </div>
+                <div
+                  key={i}
+                  className="resume-element-detail p-2 w-full  flex justify-between"
+                >
+                  <div className="resume-element-header flex justify-between w-full">
+                    <div className="flex w-full">
+                      <span className="resume-circle w-4 h-4 rounded-full	mr-3 bg-dark-orange"></span>
+                      <div className="w-[80%] ">
+                        <h3 className="mb-4 text-justify ">
+                          {el.headerDescription}
+                        </h3>
+                        <p className="text-justify ">{el.detail}</p>
+                      </div>
+                    </div>
 
-                  <p>{el.detail}</p>
+                    {el.date && (
+                      <h4 className="w-32 border-2 bg-dark-orange py-1 text-center  rounded-3xl h-fit text-white">
+                        {el.date}
+                      </h4>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
