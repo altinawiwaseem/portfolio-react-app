@@ -14,7 +14,10 @@ function Resume() {
   };
 
   return (
-    <div className="resume-main-container h-screen width-screen flex justify-between items-center flex-col px-12 pb-12 box-border ">
+    <div
+      id="resume"
+      className=" resume-main-container h-screen width-screen flex justify-between items-center flex-col px-12 sm:py-10 box-border "
+    >
       <div className="resume-header">
         <h1 className="text-4xl font-bold  ">Resume</h1>
         <span className="underline w-full  border-1 block border-black relative mt-3 h-1 bg-black">
@@ -22,17 +25,17 @@ function Resume() {
         </span>
       </div>
       {/* description container */}
-      <div className="resume-content-container w-screen h-screen md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden	">
+      <div className="resume-content-container w-screen h-screen md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
         {/* resume left box */}
-        <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%] md:w-[35%] min-w-[250px] ">
-          <div className="bullet-icons rounded-3xl absolute z-1 sm:h-[80%] md:h-full h-full w-[34px] "></div>
+        <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
+          <div className="bullet-icons absolute z-1   h-full w-[32px] "></div>
 
           {resumeData.map((item, i) => (
             <div
               key={i}
               id={i}
               onClick={() => handleBoxClick(i)}
-              className={`r-bullet-box flex items-center cursor-pointer my-1 md:my-8 sm:my-8 px-2 sm:h-8 py-1 rounded-full w-[30px] bg-primary-color ${
+              className={`r-bullet-box flex items-center cursor-pointer my-1 sm:my-8 px-2 sm:h-8 py-1 rounded-full w-[30px] bg-primary-color ${
                 i == selected ? "selected" : ""
               }`}
             >
@@ -66,13 +69,13 @@ function Resume() {
                       <span className="resume-circle w-4 h-4 rounded-full	mr-4  bg-dark-orange "></span>
                       <div className="sm:w-[80%] w-full">
                         <h3
-                          className={` sm:mb-4 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base   ${
+                          className={` sm:mb-2 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base  text-sm sm:text-base ${
                             el.detail ? "text-dark-orange" : "text-black"
                           } `}
                         >
                           {el.headerDescription}
                         </h3>
-                        <p className="text-justify p-1 font-poppins-normal sm:font-poppins-medium text-base ">
+                        <p className="text-justify p-1 font-poppins-normal sm:font-poppins-medium text-sm sm:text-base">
                           {el.detail}
                         </p>
                       </div>

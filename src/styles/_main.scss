@@ -40,7 +40,7 @@ body ::-webkit-scrollbar-thumb {
 .btn {
   border-radius: 50px;
   padding: 14px 0;
-  width: 160px;
+  width: 120px;
   cursor: pointer;
   transition: 0.2s;
   font-family: "Poppins SemiBold";
@@ -51,7 +51,6 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .primary-btn {
-  color: var(--white);
   border: 2px solid linen;
   font-size: 12px;
   background-color: #1f2235;
@@ -65,18 +64,21 @@ body ::-webkit-scrollbar-thumb {
 .primary-btn:hover {
   color: aliceblue;
   border: 2px solid #ff5823;
-  background-color: #1f2235;
 }
 
 .highlighted-btn {
-  color: var(--white);
-
+  color: white;
   font-size: 12px;
   background-color: #ff5823;
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .btn {
+    width: 160px;
   }
 }
 

@@ -1,26 +1,19 @@
 import React from "react";
 import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { SiVercel } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   return (
     <>
-      <div className="profile-container">
-        <Navbar />
-        <p>hello from home</p>
-        <div className="profile-parent">
-          <div className="profile-details">
-            <div className="colz">
-              <div className="colz-icon flex ">
-                <a
-                  href="https://www.instagram.com/waseemdam/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram />
-                </a>
+      <div className="profile-container flex flex-col  h-screen w-screen items-center">
+        <div className="hidden tablet:flex tablet:w-full lg:w-[70%] sm:w-full lg:justify-end tablet:justify-center   ">
+          <Navbar />
+        </div>
+        <div className="profile-parent flex flex-col-reverse tablet:flex-row w-screen p-4 h-full sm:p-8">
+          <div className="profile-details w-full h-full flex flex-col items-center  sm:justify-center">
+            <div className="colz sm:w-2/5 p-4 w-full">
+              <div className="colz-icon  flex justify-around text-2xl ">
                 <a
                   href="https://github.com/altinawiwaseem"
                   target="_blank"
@@ -36,23 +29,25 @@ const Home = () => {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://vercel.com/altinawiwaseem"
+                  href="https://www.instagram.com/waseemdam/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <SiVercel />
+                  <FaInstagram />
                 </a>
               </div>
             </div>
-            <div className="profile-details-name">
-              <span className="primary-text">
-                {" "}
-                Hello, I'M <span className="highlighted-text"> </span>
+            <div className="profile-details-name text-xl p-2">
+              <span className="primary-text font-poppins-semibold sm:text-xl">
+                Hello, I'M{" "}
+                <span className="highlighted-text font-poppins-bold text-dark-orange text-2xl">
+                  WASEEM{" "}
+                </span>
               </span>
             </div>
             <div className="profile-details-role min-w-min">
-              <span className="primary-text min-w-min ">
-                <h1>
+              <span className="primary-text min-w-min flex flex-col items-center">
+                <h1 className="sm:text-3xl font-poppins-semibold my-2">
                   {" "}
                   <Typewriter
                     options={{
@@ -75,22 +70,28 @@ const Home = () => {
                     }}
                   />
                 </h1>
-                <span className="profile-role-tagline">
-                  <strong style={{ color: "#5bc5fe" }}> Passionate </strong>
+                <span className="profile-role-tagline  mt-2 mb-4 block p-2 text-justify font-poppins-semibold sm:text-xl">
+                  <strong className="text-light-blue"> Passionate </strong>
                   <strong> && </strong>
-                  <strong style={{ color: "#5bc5fe" }}> knack </strong>
+                  <strong className="text-light-blue"> knack </strong>
                   of building application with front and back end operation
                 </span>
               </span>
             </div>
-            <div className="profile-options">
-              <button className="btn primary-btn">Hire Me</button>
+            <div className="profile-options flex justify-between w-[90%] sm:justify-center">
+              <button className="btn sm:mx-4 primary-btn text-white ">
+                Hire Me
+              </button>
 
               <a href="files/CV.pdf" download="Waseem's Cv.pdf">
-                <button className="btn highlighted-btn"> Get Resume</button>
+                <button className="btn sm:mx-4 highlighted-btn">
+                  {" "}
+                  Get Resume
+                </button>
               </a>
             </div>
           </div>
+          <div className="profile-pic w-full h-full md:w-2/3"></div>
         </div>
       </div>
     </>
