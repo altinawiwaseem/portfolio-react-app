@@ -1,0 +1,31 @@
+.nav a:hover {
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #ff5823;
+}
+
+.nav > ul > li:first-child:hover > a {
+  padding-bottom: 4px;
+  border-bottom: 3px solid black;
+}
+
+.floating-navbar {
+  transform: translateX(-50%);
+  left: 50%;
+  a {
+    cursor: pointer;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.floating-navbar a.active {
+  background: #1f2235;
+}

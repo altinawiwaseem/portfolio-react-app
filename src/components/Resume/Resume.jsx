@@ -5,7 +5,6 @@ function Resume() {
   const targetedBox = useRef(null);
   const [selected, setSelected] = useState(0);
 
-  console.log(selected);
   const handleBoxClick = (i) => {
     setSelected(i);
     targetedBox.current.children[i].scrollIntoView({
@@ -50,7 +49,7 @@ function Resume() {
         </div>
         {/* resume right box */}
         <div
-          className="resume-right pt-2 w-full h-full  overflow-y-hidden sm:m-2 min-w-[330px] "
+          className="resume-right px-2 pt-2 w-full h-full  overflow-y-hidden sm:m-2 min-w-[330px] "
           ref={targetedBox}
         >
           {/* mapping the resume data content */}

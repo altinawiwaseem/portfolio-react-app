@@ -3,18 +3,22 @@ import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import Navbar from "../Navbar/Navbar";
 
-const Home = () => {
+const Header = () => {
   return (
     <>
-      <div className="profile-container flex flex-col  h-screen w-screen items-center">
-        <div className="hidden tablet:flex tablet:w-full lg:w-[70%] sm:w-full lg:justify-end tablet:justify-center   ">
+      <div
+        id="home"
+        className="profile-container flex flex-col  h-screen w-screen items-center"
+      >
+        <div className="tablet:flex tablet:w-full lg:w-[70%] sm:w-full lg:justify-end tablet:justify-center   ">
           <Navbar />
         </div>
         <div className="profile-parent flex flex-col-reverse tablet:flex-row w-screen p-4 h-full sm:p-8">
           <div className="profile-details w-full h-full flex flex-col items-center  sm:justify-center">
             <div className="colz sm:w-2/5 p-4 w-full">
-              <div className="colz-icon  flex justify-around text-2xl ">
+              <div className="colz-icon  flex justify-around text-2xl md:text-3xl ">
                 <a
+                  className="icon"
                   href="https://github.com/altinawiwaseem"
                   target="_blank"
                   rel="noreferrer"
@@ -22,6 +26,7 @@ const Home = () => {
                   <FaGithubSquare />
                 </a>
                 <a
+                  className="icon"
                   href="https://www.linkedin.com/in/waseem-altinawi/"
                   target="_blank"
                   rel="noreferrer"
@@ -29,6 +34,7 @@ const Home = () => {
                   <FaLinkedin />
                 </a>
                 <a
+                  className="icon"
                   href="https://www.instagram.com/waseemdam/"
                   target="_blank"
                   rel="noreferrer"
@@ -47,7 +53,7 @@ const Home = () => {
             </div>
             <div className="profile-details-role min-w-min">
               <span className="primary-text min-w-min flex flex-col items-center">
-                <h1 className="sm:text-3xl font-poppins-semibold my-2">
+                <h1 className="text-2xl sm:text-3xl font-poppins-semibold my-2">
                   {" "}
                   <Typewriter
                     options={{
@@ -78,16 +84,13 @@ const Home = () => {
                 </span>
               </span>
             </div>
-            <div className="profile-options flex justify-between w-[90%] sm:justify-center">
-              <button className="btn sm:mx-4 primary-btn text-white ">
-                Hire Me
+            <div className="profile-options flex gap-8">
+              <button className="btn primary-btn text-white ">
+                <a href="#contact">Hire Me</a>
               </button>
 
               <a href="files/CV.pdf" download="Waseem's Cv.pdf">
-                <button className="btn sm:mx-4 highlighted-btn">
-                  {" "}
-                  Get Resume
-                </button>
+                <button className="btn highlighted-btn"> Get Resume</button>
               </a>
             </div>
           </div>
@@ -98,4 +101,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Header;
