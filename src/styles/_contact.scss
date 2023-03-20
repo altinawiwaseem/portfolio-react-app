@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  resize: none;
+  background-color: #0f1227e1;
+  color: white;
+}
+
+.contact-option {
+  background-color: #0f1227e1;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

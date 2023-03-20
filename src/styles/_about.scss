@@ -1,0 +1,26 @@
+.about-header-img {
+  /* flip vertically */
+  transform: scale(-1, -1);
+}
+
+.about-container {
+  box-shadow: rgba(0, 0, 0, 0.518) 10px 5px 12px;
+}
+
+.about-img {
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+.pic-container::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background-color: white;
+  transform: skew(2deg, 2deg);
+
+  z-index: -1;
+}

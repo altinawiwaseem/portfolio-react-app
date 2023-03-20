@@ -48,7 +48,7 @@ const Navbar = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-20}
                 duration={500}
               >
                 {<AiOutlineHome />}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-20}
                 duration={500}
               >
                 {<AiOutlineUser />}
@@ -70,7 +70,7 @@ const Navbar = () => {
                 to="resume"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-15}
                 duration={500}
               >
                 {<ImProfile />}
@@ -81,7 +81,7 @@ const Navbar = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-20}
                 duration={500}
               >
                 {" "}

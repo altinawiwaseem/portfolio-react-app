@@ -101,3 +101,5 @@ export const resumeData = [
     ],
   },
 ];
+
+export const aboutMe = `Hello! I'm Waseem, and I fell in love with programming when I discovered its power to create innovative solutions. I specialize in the MERN stack, including MongoDB, Express.js, React.js, and Node.js, as well as classic languages like JavaScript With a strong foundation in HTML and CSS.\n My passion lies in building new web technologies, developing applications, and creating products in areas related to the cloud. Whenever possible, I also apply my skills in developing products using modern JavaScript libraries and frameworks such as React.js.\n If you'd like to learn more about my skills and experience, please feel free to get in touch with me.`;

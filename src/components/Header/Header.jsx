@@ -2,21 +2,23 @@ import React from "react";
 import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import Navbar from "../Navbar/Navbar";
+import profileImg from "../../assets/myImg/profileImg.jpg";
+import headerFooter from "../../assets/shape-bg.png";
 
 const Header = () => {
   return (
     <>
       <div
         id="home"
-        className="profile-container flex flex-col  h-screen w-screen items-center"
+        className="profile-container flex flex-col   w-screen items-center bg-primary-color "
       >
-        <div className="tablet:flex tablet:w-full lg:w-[70%] sm:w-full lg:justify-end tablet:justify-center   ">
+        <div className="tablet:flex tablet:w-full lg:w-[70%] sm:w-full lg:justify-end tablet:justify-center text-white">
           <Navbar />
         </div>
-        <div className="profile-parent flex flex-col-reverse tablet:flex-row w-screen p-4 h-full sm:p-8">
-          <div className="profile-details w-full h-full flex flex-col items-center  sm:justify-center">
+        <div className="profile-parent flex flex-col-reverse tablet:flex-row w-screen p-4 h-full sm:p-8 ">
+          <div className="profile-details w-full h-full flex flex-col items-center  sm:justify-center ">
             <div className="colz sm:w-2/5 p-4 w-full">
-              <div className="colz-icon  flex justify-around text-2xl md:text-3xl ">
+              <div className="colz-icon  flex justify-around text-2xl md:text-3xl text-white ">
                 <a
                   className="icon"
                   href="https://github.com/altinawiwaseem"
@@ -44,7 +46,7 @@ const Header = () => {
               </div>
             </div>
             <div className="profile-details-name text-xl p-2">
-              <span className="primary-text font-poppins-semibold sm:text-xl">
+              <span className="primary-text font-poppins-semibold sm:text-xl text-white">
                 Hello, I'M{" "}
                 <span className="highlighted-text font-poppins-bold text-dark-orange text-2xl">
                   WASEEM{" "}
@@ -53,7 +55,7 @@ const Header = () => {
             </div>
             <div className="profile-details-role min-w-min">
               <span className="primary-text min-w-min flex flex-col items-center">
-                <h1 className="text-2xl sm:text-3xl font-poppins-semibold my-2">
+                <h1 className="text-2xl sm:text-3xl font-poppins-semibold my-2 text-white">
                   {" "}
                   <Typewriter
                     options={{
@@ -76,9 +78,9 @@ const Header = () => {
                     }}
                   />
                 </h1>
-                <span className="profile-role-tagline  mt-2 mb-4 block p-2 text-justify font-poppins-semibold sm:text-xl">
-                  <strong className="text-light-blue"> Passionate </strong>
-                  <strong> && </strong>
+                <span className="profile-role-tagline  mt-2 mb-4 block p-2 text-justify font-poppins-semibold sm:text-xl text-white">
+                  <strong className="text-light-blue "> Passionate </strong>
+                  <strong className="text-white"> && </strong>
                   <strong className="text-light-blue"> knack </strong>
                   of building application with front and back end operation
                 </span>
@@ -94,7 +96,23 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="profile-pic w-full h-full md:w-2/3"></div>
+          <div className="profile-pic w-full h-full md:w-2/3 flex justify-center items-center px-4">
+            <div className="profile-pic-border  flex justify-center items-center tablet:w-[280px] tablet:h-[280px] sm:h-[360px] sm:w-[360px] h-[300px] w-[300px] lg:h-[380px] lg:w-[380px]">
+              <img
+                className="profile-img w-[92%] h-[92%]"
+                src={profileImg}
+                alt="myPic"
+              />{" "}
+              {/*  <img
+                className="profile-pic-bg h-[92%] w-[92%]"
+                src={profileImg}
+                alt=""
+              /> */}
+            </div>
+          </div>
+        </div>
+        <div className="header-footer ">
+          <img src={headerFooter} alt="" />
         </div>
       </div>
     </>

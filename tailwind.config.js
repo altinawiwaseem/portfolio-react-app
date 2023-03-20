@@ -36,6 +36,8 @@ module.exports = {
         "toast-success": "#0cbfae",
         "loader-color": "#0cbfae",
         "primary-color": "#1f2235",
+        "secondary-color": "#0f1227",
+        "option-color": "#0f1227e1",
       },
     },
   },

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { resumeData } from "./data";
+import { resumeData } from "../../data";
 
 function Resume() {
   const targetedBox = useRef(null);
@@ -9,13 +9,14 @@ function Resume() {
     setSelected(i);
     targetedBox.current.children[i].scrollIntoView({
       behavior: "smooth",
+      block: "nearest",
     });
   };
 
   return (
     <div
       id="resume"
-      className=" resume-main-container h-screen width-screen flex justify-between items-center flex-col px-12 sm:py-10 box-border "
+      className=" resume-main-container h-screen w-screen flex justify-between  items-center flex-col px-12 sm:py-10 box-border "
     >
       <div className="resume-header">
         <h1 className="text-4xl font-bold  ">Resume</h1>
@@ -24,10 +25,10 @@ function Resume() {
         </span>
       </div>
       {/* description container */}
-      <div className="resume-content-container w-screen h-screen md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
+      <div className="resume-content-container w-screen h-full md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
         {/* resume left box */}
         <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
-          <div className="bullet-icons absolute z-1   h-full w-[32px] "></div>
+          <div className="bullet-icons absolute z-1 h-full lg:h-full sm:h-3/4 w-[32px] "></div>
 
           {resumeData.map((item, i) => (
             <div
@@ -58,11 +59,11 @@ function Resume() {
               key={i}
               id={i}
               className={
-                "resume-details-container h-full max-w-[800px] flex flex-col sm:p-4 justify-evenly"
+                "resume-details-container h-full max-w-[800px] flex flex-col md:p-4 justify-evenly"
               }
             >
               {item.title.map((el, i) => (
-                <div key={i} className="resume-element-detail  w-full  ">
+                <div key={i} className="resume-element-detail  w-full ">
                   <div className="resume-element-header flex  justify-between w-full ">
                     <div className="flex w-full ">
                       <span className="resume-circle w-4 h-4 rounded-full	mr-4  bg-dark-orange "></span>
