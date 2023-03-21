@@ -59,7 +59,7 @@ const Navbar = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-15}
                 duration={500}
               >
                 {<AiOutlineUser />}
@@ -81,7 +81,7 @@ const Navbar = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-15}
                 duration={500}
               >
                 {" "}

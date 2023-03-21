@@ -17,6 +17,16 @@ textarea {
   color: white;
 }
 
+/* For Chrome autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text;
+  background-color: transparent !important;
+  background-clip: text;
+}
 .contact-option {
   background-color: #0f1227e1;
 
