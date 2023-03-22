@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import Navbar from "../Navbar/Navbar";
+import { Link } from "react-scroll";
 import profileImg from "../../assets/myImg/profileImg.jpg";
 import headerFooter from "../../assets/shape-bg.png";
 
@@ -87,9 +88,16 @@ const Header = () => {
               </span>
             </div>
             <div className="profile-options flex gap-8">
-              <button className="btn primary-btn text-white ">
-                <a href="#contact">Hire Me</a>
-              </button>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={500}
+              >
+                {" "}
+                <button className="btn primary-btn text-white ">Hire Me</button>
+              </Link>
 
               <a href="files/CV.pdf" download="Waseem's Cv.pdf">
                 <button className="btn highlighted-btn"> Get Resume</button>
@@ -103,11 +111,6 @@ const Header = () => {
                 src={profileImg}
                 alt="myPic"
               />{" "}
-              {/*  <img
-                className="profile-pic-bg h-[92%] w-[92%]"
-                src={profileImg}
-                alt=""
-              /> */}
             </div>
           </div>
         </div>
