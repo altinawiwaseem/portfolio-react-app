@@ -19,7 +19,12 @@ function Projects() {
         <div className="projects-container grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-8  bg-primary-color px-4 tablet:px-8 sm:px-10 py-6 lg:px-32">
           <article className="project-item p-4 bg-white">
             <div className="project-img ">
-              <img src={img2} alt="mern+ project" />
+              <img
+                className="static rounded-2xl"
+                src={img2}
+                alt="mern+ project"
+              />
+              <img className="gif" src={mern} alt="mern+ project" />
             </div>
             <h3 className="project-title mt-5 mb-8">Title</h3>
             <div className="project-links flex  mb-4 flex  ">
