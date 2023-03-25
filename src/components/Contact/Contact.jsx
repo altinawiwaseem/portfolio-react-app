@@ -35,11 +35,11 @@ const Contact = () => {
     >
       <div className="Contact-header">
         <h1 className="text-4xl font-bold  ">Contact Me</h1>
-        <span className="underline w-full   block  relative mt-3 h-1 bg-black">
-          <span className="underline-node bg-dark-orange"></span>
+        <span className="underline w-full   block  relative mt-3 h-1 bg-black mb-6">
+          <span className="underline-node bg-dark-orange "></span>
         </span>
       </div>
-      <div className="contact-container grid grid-cols-1  gap-y-8 lg:grid-cols-[35%_45%] gap-4 w-full  rounded-2xl justify-center  bg-primary-color md:w-[85%] py-10 px-6 mt-4 relative lg:pt-20  max-h-full tablet:h-[90%]">
+      <div className="contact-container grid grid-cols-1  gap-y-8 lg:grid-cols-[35%_45%] gap-4 w-full  rounded-2xl justify-center  bg-primary-color w-[93%] md:w-[85%] py-10 px-6 mt-4 relative lg:pt-20  max-h-full tablet:h-[90%]">
         <div className="contact-options flex flex-col gap-4 sm:gap-8 text-white ">
           <div className="contact-option border border-white  py-4 rounded-xl flex flex-col items-center tablet:gap-2 w-full lg:w-[60%] h-[130px] tablet:h-[140px] sm:h-[150px] justify-center">
             <FiMail />
@@ -97,7 +97,8 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name required"
+            placeholder="Your Full Name"
+            required
           />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea

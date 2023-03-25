@@ -1,6 +1,6 @@
 import { FaGraduationCap, FaHistory } from "react-icons/fa";
 import { GiLaptop } from "react-icons/gi";
-import { GoProject } from "react-icons/go";
+
 export const resumeData = [
   {
     header: "Education",
@@ -83,22 +83,18 @@ export const resumeData = [
       },
     ],
   },
+];
 
+export const projects = [
   {
-    header: "Projects",
-    icon: <GoProject />,
-    title: [
-      {
-        headerDescription: "Netfilx Clone",
-        detail:
-          "https://netflix-clone-react-proj-91d29.web.app/ \n Creating a Netflix clone project to mimic Netflix website with login logout authentication Technologies used: HTML, CSS, JavsScript, React, Api, Firebase",
-      },
-      {
-        headerDescription: "Covid-19 Tracker ",
-        detail:
-          "https://covid-19-traker-react-app-git-main-altinawiwaseem.vercel.app/ \n Creating App to track Covid-19 cases around the world spotting cases on the map and give daily and total deaths, recovers and cases statistics as well as the ability to search certain country Technologies used: HTML, CSS, JavsScript, React, Api, Leafletjs-map ,Chart.js, React-chartjs-2, Vercel",
-      },
-    ],
+    title: "Netflix Clone",
+    detail:
+      "https://netflix-clone-react-proj-91d29.web.app/ \n Creating a Netflix clone project to mimic Netflix website with login logout authentication Technologies used: HTML, CSS, JavsScript, React, Api, Firebase",
+  },
+  {
+    headerDescription: "Covid-19 Tracker ",
+    detail:
+      "https://covid-19-traker-react-app-git-main-altinawiwaseem.vercel.app/ \n Creating App to track Covid-19 cases around the world spotting cases on the map and give daily and total deaths, recovers and cases statistics as well as the ability to search certain country Technologies used: HTML, CSS, JavsScript, React, Api, Leafletjs-map ,Chart.js, React-chartjs-2, Vercel",
   },
 ];
 

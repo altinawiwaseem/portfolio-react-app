@@ -5,9 +5,9 @@ import { aboutMe } from "../../data";
 
 const About = () => {
   return (
-    <div
+    <section
       id="about"
-      className=" about-main-container max-h-auto lg:h-screen width-screen flex flex-col justify-between items-center  px-12 sm:py-12 box-border "
+      className=" about-main-container lg:h-screen width-screen flex flex-col justify-between items-center  px-12 sm:py-12 box-border "
     >
       <div className="about-header">
         <h1 className="text-4xl font-bold  ">About Me</h1>
@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

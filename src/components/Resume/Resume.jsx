@@ -14,7 +14,7 @@ function Resume() {
   };
 
   return (
-    <div
+    <section
       id="resume"
       className=" resume-main-container h-screen w-screen flex justify-between  items-center flex-col px-12 sm:py-10 box-border "
     >
@@ -27,7 +27,7 @@ function Resume() {
       {/* description container */}
       <div className="resume-content-container w-screen h-full md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
         {/* resume left box */}
-        <div className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
+        <article className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
           <div className="bullet-icons absolute z-1 h-full lg:h-full sm:h-3/4 w-[32px] "></div>
 
           {resumeData.map((item, i) => (
@@ -47,9 +47,9 @@ function Resume() {
               </h2>
             </div>
           ))}
-        </div>
+        </article>
         {/* resume right box */}
-        <div
+        <article
           className="resume-right px-2 pt-2 w-full h-full  overflow-y-hidden sm:m-2 min-w-[330px] "
           ref={targetedBox}
         >
@@ -91,9 +91,9 @@ function Resume() {
               ))}
             </div>
           ))}
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 }
 

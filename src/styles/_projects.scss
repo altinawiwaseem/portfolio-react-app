@@ -1,0 +1,21 @@
+.project-item {
+  border-radius: 3rem 3rem 3rem 0;
+  border: 3px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.project-item:hover {
+  border-color: white;
+  transform: scale(1.02);
+  background: transparent;
+  color: white;
+}
+
+.project-img {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.project-img:hover {
+  transform: scale(1.3);
+}
