@@ -4,7 +4,7 @@ import { resumeData } from "../../data";
 function Resume() {
   const targetedBox = useRef(null);
   const [selected, setSelected] = useState(0);
-
+  const baseWidth = 20;
   const handleBoxClick = (i) => {
     setSelected(i);
     targetedBox.current.children[i].scrollIntoView({
@@ -28,7 +28,7 @@ function Resume() {
       <div className="resume-content-container w-screen h-full md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
         {/* resume left box */}
         <article className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
-          <div className="bullet-icons absolute z-1 h-full lg:h-full sm:h-3/4 w-[32px] "></div>
+          <div className="bullet-icons absolute z-1 h-full sm:h-[70%] lg:h-[80%] w-[32px] "></div>
 
           {resumeData.map((item, i) => (
             <div
@@ -65,22 +65,40 @@ function Resume() {
               {item.title.map((el, i) => (
                 <div key={i} className="resume-element-detail  w-full ">
                   <div className="resume-element-header flex  justify-between w-full ">
-                    <div className="flex w-full ">
+                    <div className="flex w-full  ">
                       <span className="resume-circle w-4 h-4 rounded-full	mr-4  bg-dark-orange "></span>
-                      <div className="sm:w-[80%] w-full">
-                        <h3
-                          className={` sm:mb-2 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base  text-sm sm:text-base ${
-                            el.detail ? "text-dark-orange" : "text-black"
-                          } `}
-                        >
-                          {el.headerDescription}
-                        </h3>
-                        <p className="text-justify p-1 font-poppins-normal sm:font-poppins-medium text-sm sm:text-base">
-                          {el.detail}
-                        </p>
-                      </div>
-                    </div>
+                      {el.headerDescription && (
+                        <div className="sm:w-[80%] w-full ">
+                          <h3
+                            className={` sm:mb-2 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base  text-sm sm:text-base ${
+                              el.detail ? "text-dark-orange" : "text-black"
+                            } `}
+                          >
+                            {el.headerDescription}
+                          </h3>
 
+                          <p className="text-justify p-1 font-poppins-normal sm:font-poppins-medium text-sm sm:text-base">
+                            {el.detail}
+                          </p>
+                        </div>
+                      )}
+
+                      {el.skill && (
+                        <div className="sm:w-[80%] w-full flex h-full ">
+                          <h3 className="sm:mb-2 text-justify w-full font-poppins-medium sm:font-poppins-semibold sm:text-base  text-sm sm:text-base">
+                            {el.skill}
+                          </h3>
+                        </div>
+                      )}
+                    </div>
+                    {el.level && (
+                      <span className="w-40 inline h-4 bg-primary-color relative">
+                        <span
+                          style={{ width: `${el.level * 15}%` }}
+                          className="h-4 bg-dark-orange absolute top-0 left-0 inline "
+                        ></span>
+                      </span>
+                    )}
                     {el.date && (
                       <h4 className="w-32 border-2 bg-dark-orange py-1 text-center  rounded-3xl h-fit text-white">
                         {el.date}

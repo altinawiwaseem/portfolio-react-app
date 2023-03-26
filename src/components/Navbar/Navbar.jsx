@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { MdLaptopChromebook } from "react-icons/md";
 
 const Navbar = () => {
   const [scrolling, handleScrolling] = useState(false);
@@ -83,6 +84,17 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -134,6 +146,18 @@ const Navbar = () => {
                 {<ImProfile />}
               </Link>
             </li>
+            <li>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-15}
+                duration={500}
+              >
+                {<MdLaptopChromebook />}
+              </Link>
+            </li>
+
             <li>
               <Link
                 to="contact"

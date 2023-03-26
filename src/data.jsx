@@ -1,5 +1,15 @@
 import { FaGraduationCap, FaHistory } from "react-icons/fa";
 import { GiLaptop } from "react-icons/gi";
+import mernStatic from "../src/assets/img/mern1.png";
+import mernGif from "../src/assets/img/mern+.gif";
+import covidStatic from "../src/assets/img/covid191.png";
+import covidGif from "../src/assets/img/covid19.gif";
+import messageboardStatic from "../src/assets/img/messageboard.png";
+import messageboardGif from "../src/assets/img/messageboard.gif";
+import netflixStatic from "../src/assets/img/netflix.png";
+import netflixGif from "../src/assets/img/netflix.gif";
+import portfolioStatic from "../src/assets/img/portfolio.png";
+import portfolioGif from "../src/assets/img/portfolio.gif";
 
 export const resumeData = [
   {
@@ -55,31 +65,40 @@ export const resumeData = [
     icon: <GiLaptop />,
     title: [
       {
-        headerDescription: "HTML",
+        skill: "HTML",
+        level: 3,
       },
       {
-        headerDescription: "CSS",
+        skill: "CSS",
+        level: 4.4,
       },
       {
-        headerDescription: "Sass",
+        skill: "Sass",
+        level: 4,
       },
       {
-        headerDescription: "JavaScript",
+        skill: "JavaScript",
+        level: 5.5,
       },
       {
-        headerDescription: "React",
+        skill: "React",
+        level: 5.4,
       },
       {
-        headerDescription: "Node js",
+        skill: "Node js",
+        level: 3.9,
       },
       {
-        headerDescription: "MongoDB",
+        skill: "MongoDB",
+        level: 3.5,
       },
       {
-        headerDescription: "Mongoose",
+        skill: "Mongoose",
+        level: 3.9,
       },
       {
-        headerDescription: "Express Js",
+        skill: "Express Js",
+        level: 4.2,
       },
     ],
   },
@@ -87,14 +106,52 @@ export const resumeData = [
 
 export const projects = [
   {
-    title: "Netflix Clone",
+    id: 1,
+    title: "MERN+",
+    github: "https://github.com/altinawiwaseem/swm-final-project",
+    link: "https://mernplus.onrender.com/",
     detail:
-      "https://netflix-clone-react-proj-91d29.web.app/ \n Creating a Netflix clone project to mimic Netflix website with login logout authentication Technologies used: HTML, CSS, JavsScript, React, Api, Firebase",
+      "Quiz App is a full-stack web application that allows users to take quizzes, solve code challenges, view results, and track progress",
+    imgStatic: mernStatic,
+    imgGif: mernGif,
   },
   {
+    id: 2,
     title: "Covid-19 Tracker ",
+    github: "https://github.com/altinawiwaseem/COVID-19-Traker-react-app",
+    link: "https://covid-19-traker-react-6mpkbu00r-altinawiwaseem.vercel.app/",
     detail:
-      "https://covid-19-traker-react-app-git-main-altinawiwaseem.vercel.app/ \n Creating App to track Covid-19 cases around the world spotting cases on the map and give daily and total deaths, recovers and cases statistics as well as the ability to search certain country Technologies used: HTML, CSS, JavsScript, React, Api, Leafletjs-map ,Chart.js, React-chartjs-2, Vercel",
+      "App to track Covid-19 cases around the world spotting cases on the map and give daily and total deaths, recovers and cases.",
+    imgStatic: covidStatic,
+    imgGif: covidGif,
+  },
+  {
+    id: 3,
+    title: "Message Board",
+    github: "https://github.com/altinawiwaseem/message-Board",
+    link: "https://github.com/altinawiwaseem/message-Board",
+    detail:
+      "Fullstack application which serves as an online messageboard. include a full REST API, with user data stored in a MongoDB server.",
+    imgStatic: messageboardStatic,
+    imgGif: messageboardGif,
+  },
+  {
+    id: 4,
+    title: "Netflix Clone",
+    github: "https://github.com/altinawiwaseem/NETFLIX_CLONE",
+    link: "https://netflix-clone-react-proj-91d29.web.app/",
+    detail: "Netflix clone project to mimic Netflix website",
+    imgStatic: netflixStatic,
+    imgGif: netflixGif,
+  },
+  {
+    id: 5,
+    title: "Portfolio ",
+    github: "https://github.com/altinawiwaseem/portfolio-v1",
+    link: "https://altinawiwaseem.github.io/portfolio-v1/",
+    detail: "A personal portfolio App using HTML & SASS",
+    imgStatic: portfolioStatic,
+    imgGif: portfolioGif,
   },
 ];
 
