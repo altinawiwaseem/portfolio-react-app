@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-**PORTFOLIO React-App project**
+**Portfolio React-App project**
 
 [Test it by yourself](https://altinawiwaseem.vercel.app/)
 
