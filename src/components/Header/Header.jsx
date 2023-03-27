@@ -1,6 +1,5 @@
 import React from "react";
 import { FaInstagram, FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import Typewriter from "typewriter-effect";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-scroll";
 import profileImg from "../../assets/myImg/profileImg.jpg";
@@ -98,7 +97,7 @@ const Header = () => {
                 <button className="btn primary-btn text-white ">Hire Me</button>
               </Link>
 
-              <a href="files/CV.pdf" download="Waseem's Cv.pdf">
+              <a href="files/CV.pdf" download="Altinawi-Cv.pdf">
                 <button className="btn highlighted-btn"> Get Resume</button>
               </a>
             </div>
