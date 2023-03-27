@@ -24,6 +24,7 @@ Personal Portfolio react app
 - [x] _Api_
 - [x] _React Icons_
 - [x] _React Scroll_
+- [x] _Typeit React_
 - [x] _Tailwind_
 - [x] _npm_
 - [ ] _..._
