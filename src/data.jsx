@@ -42,6 +42,11 @@ export const resumeData = [
     icon: <FaHistory />,
     title: [
       {
+        headerDescription:
+          "Laravel Developer with API Integration internship at eCommeleon (Germany)",
+        date: "01/2023 02/2023",
+      },
+      {
         headerDescription: "Salesman in Kamps Bäckerei (Germany)",
         date: "2020 till now",
       },
@@ -66,7 +71,7 @@ export const resumeData = [
     title: [
       {
         skill: "HTML",
-        level: 3,
+        level: 4,
       },
       {
         skill: "CSS",

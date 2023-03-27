@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer className="footer bg-primary-color text-white py-12 flex flex-col items-center mt-12 sm:font-poppins-semibold font-poppins-regular sm:text-sm md:text-lg">
-      <ul className=" flex flex-wrap justify-center gap-12 mx-auto mb-12">
+      <ul className="flex flex-wrap justify-center gap-12 mx-auto mb-12">
         <li>
           {" "}
           <Link to="home" spy={true} smooth={true} offset={-20} duration={500}>
