@@ -12,9 +12,7 @@
 
 ### about the project
 
-Portfolio react app
-
-- using react
+Personal Portfolio react app
 
 #### Developed with
 
