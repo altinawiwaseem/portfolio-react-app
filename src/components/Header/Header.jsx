@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import { Link } from "react-scroll";
 import profileImg from "../../assets/myImg/profileImg.jpg";
 import headerFooter from "../../assets/shape-bg.png";
+import TypeIt from "typeit-react";
 
 const Header = () => {
   return (
@@ -58,24 +59,22 @@ const Header = () => {
               <span className="primary-text min-w-min flex flex-col items-center">
                 <h1 className="text-2xl sm:text-3xl font-poppins-semibold my-2 text-white">
                   {" "}
-                  <Typewriter
+                  <TypeIt
                     options={{
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 60,
-                      delay: 100,
                       strings: [
                         "Enthusiastic Developer ✨",
                         "Full Stack Developer 💻",
-
                         "MERN Stack Developer 😎",
-
                         "React Developer ⚛️",
-
                         "Backend Developer 🖥",
-
-                        `Frontend Developer 💫`,
+                        "Frontend Developer 💫",
                       ],
+                      speed: 80,
+                      breakLines: false,
+                      nextStringDelay: 1000,
+                      deleteSpeed: 60,
+                      pause: 1000,
+                      loop: true,
                     }}
                   />
                 </h1>
