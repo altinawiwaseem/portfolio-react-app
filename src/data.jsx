@@ -59,7 +59,7 @@ export const resumeData = [
         date: "2010 to 2015",
       },
       {
-        headerDescription: "Customer Service at“Kadmous Company“",
+        headerDescription: "Customer Service at “Kadmous Company“",
         date: "2007 to 2010",
       },
     ],
