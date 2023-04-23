@@ -20,7 +20,7 @@ export const resumeData = [
         headerDescription:
           "Full Stack Web Development at DCI Digital Career Institute gGmbH",
         detail:
-          "Accomplishing a one-year-full-time training, covering Frontend and Backend Completing multiple practical projects to practice programming skills Taking German lessons as part of the course",
+          "Accomplishing a one-year-full-time training, covering Frontend and Backend. Completing multiple practical projects to practice programming skills, and taking German lessons as part of the course",
         date: "2021 to 2022",
       },
       {
