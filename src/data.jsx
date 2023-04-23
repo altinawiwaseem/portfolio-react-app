@@ -43,24 +43,23 @@ export const resumeData = [
     title: [
       {
         headerDescription:
-          "Laravel Developer with API Integration internship at eCommeleon (Germany)",
+          "Laravel Developer and API Integration internship at “e-Commeleon“",
         date: "01/2023 02/2023",
       },
       {
-        headerDescription: "Salesman in Kamps Bäckerei (Germany)",
+        headerDescription: "Salesman at “Kamps Bäckerei“",
         date: "2020 till now",
       },
       {
-        headerDescription: "Coordinator in Saudi Embassy (Switzerland)",
+        headerDescription: "Coordinator at “Saudi Arabia Embassy“",
         date: "2019 to 2020",
       },
       {
-        headerDescription:
-          "Information technology (IT) at “Fannat Company“ (Syria)",
+        headerDescription: "Information technology (IT) at “Fannat Company“",
         date: "2010 to 2015",
       },
       {
-        headerDescription: "Customer Service “Kdmous Company“ (Syria)",
+        headerDescription: "Customer Service at“Kdmous Company“",
         date: "2007 to 2010",
       },
     ],
