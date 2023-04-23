@@ -55,7 +55,8 @@ export const resumeData = [
         date: "2019 to 2020",
       },
       {
-        headerDescription: "Information technology (IT) at “Fannat Company“",
+        headerDescription:
+          "Provide technical support and maintain computer systems (IT) at “Fannat Company“",
         date: "2010 to 2015",
       },
       {
