@@ -55,8 +55,9 @@ export const resumeData = [
         date: "2019 to 2020",
       },
       {
-        headerDescription: "Supervisor at “Fannat Company“ (Syria)",
-        date: "2010 to 2014",
+        headerDescription:
+          "Information technology (IT) at “Fannat Company“ (Syria)",
+        date: "2010 to 2015",
       },
       {
         headerDescription: "Customer Service “Kdmous Company“ (Syria)",
@@ -71,15 +72,15 @@ export const resumeData = [
     title: [
       {
         skill: "HTML",
-        level: 4,
+        level: 5,
       },
       {
         skill: "CSS",
-        level: 4.4,
+        level: 4.9,
       },
       {
         skill: "Sass",
-        level: 4,
+        level: 4.5,
       },
       {
         skill: "JavaScript",
@@ -91,19 +92,27 @@ export const resumeData = [
       },
       {
         skill: "Node js",
-        level: 3.9,
+        level: 4.9,
       },
       {
         skill: "MongoDB",
-        level: 3.5,
+        level: 4.5,
       },
       {
         skill: "Mongoose",
-        level: 3.9,
+        level: 4.7,
       },
       {
         skill: "Express Js",
+        level: 4.4,
+      },
+      {
+        skill: "PHP",
         level: 4.2,
+      },
+      {
+        skill: "Laravel",
+        level: 4,
       },
     ],
   },
