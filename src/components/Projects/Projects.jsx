@@ -34,7 +34,6 @@ function Projects() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={container}
-          layout
         >
           {projects.map((item) => (
             <motion.article
