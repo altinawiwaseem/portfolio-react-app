@@ -10,6 +10,8 @@ import netflixStatic from "../src/assets/img/netflix.png";
 import netflixGif from "../src/assets/img/netflix.gif";
 import portfolioStatic from "../src/assets/img/portfolio.png";
 import portfolioGif from "../src/assets/img/portfolio.gif";
+import cartGif from "../src/assets/img/shoppingCart.gif";
+import cartStatic from "../src/assets/img/ShoppingCart.png";
 
 export const resumeData = [
   {
@@ -151,6 +153,15 @@ export const projects = [
   },
   {
     id: 4,
+    title: "PHP Shopping Cart ",
+    github: "https://github.com/altinawiwaseem/php-shopping-cart",
+    link: "https://github.com/altinawiwaseem/php-shopping-cart",
+    detail: "PHP shopping cart using relational database mysql",
+    imgStatic: cartStatic,
+    imgGif: cartGif,
+  },
+  {
+    id: 5,
     title: "Netflix Clone",
     github: "https://github.com/altinawiwaseem/NETFLIX_CLONE",
     link: "https://netflix-clone-react-proj-91d29.web.app/",
@@ -159,7 +170,7 @@ export const projects = [
     imgGif: netflixGif,
   },
   {
-    id: 5,
+    id: 6,
     title: "Portfolio ",
     github: "https://github.com/altinawiwaseem/portfolio-v1",
     link: "https://altinawiwaseem.github.io/portfolio-v1/",
