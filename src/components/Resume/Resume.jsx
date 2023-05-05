@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { resumeData } from "../../data";
+import { motion } from "framer-motion";
 
 function Resume() {
   const targetedBox = useRef(null);
@@ -11,6 +12,17 @@ function Resume() {
       behavior: "smooth",
       block: "nearest",
     });
+  };
+  const container = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const childVariant = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: { opacity: 1, scale: 1 },
   };
 
   return (
@@ -27,17 +39,35 @@ function Resume() {
       {/* description container */}
       <div className="resume-content-container w-screen h-full md:w-[90%] md:h-4/5 flex flex-col  sm:flex-row items-center overflow-y-hidden">
         {/* resume left box */}
-        <article className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] ">
-          <div className="bullet-icons absolute z-1 h-full sm:h-[70%] lg:h-[80%] w-[32px] "></div>
+        <motion.article
+          className="resume-left h-2/5 sm:h-full md:h-full flex p-4 justify-center flex-col relative w-full sm:w-[30%]  min-w-[250px] "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={container}
+        >
+          <motion.div
+            className="bullet-icons absolute z-1 h-full sm:h-[70%] lg:h-[80%] w-[32px] "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+            variants={{
+              hidden: { opacity: 0, x: -30 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          ></motion.div>
 
           {resumeData.map((item, i) => (
-            <div
+            <motion.div
               key={i}
               id={i}
               onClick={() => handleBoxClick(i)}
               className={`r-bullet-box flex items-center cursor-pointer my-1 sm:my-8 px-2 sm:h-8 py-1 rounded-full w-[30px] bg-primary-color ${
                 i == selected ? "selected" : ""
               }`}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              variants={childVariant}
             >
               <span className="logo z-40 text-white mr-[30px] h-[16px] round-md ">
                 {item.icon}
@@ -45,13 +75,21 @@ function Resume() {
               <h2 className="bullet-label whitespace-nowrap text-sm z-1">
                 {item.header}
               </h2>
-            </div>
+            </motion.div>
           ))}
-        </article>
+        </motion.article>
         {/* resume right box */}
-        <article
+        <motion.article
           className="resume-right px-2 pt-2 w-full h-full  overflow-y-hidden sm:m-2 min-w-[330px] "
           ref={targetedBox}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
         >
           {/* mapping the resume data content */}
           {resumeData.map((item, i) => (
@@ -109,7 +147,7 @@ function Resume() {
               ))}
             </div>
           ))}
-        </article>
+        </motion.article>
       </div>
     </section>
   );
