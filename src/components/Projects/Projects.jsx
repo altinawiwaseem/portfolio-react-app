@@ -1,8 +1,20 @@
 import React from "react";
 import headerFooter from "../../assets/shape-bg.png";
 import { projects } from "../../data";
+import { motion } from "framer-motion";
 
 function Projects() {
+  const container = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  const childVariant = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
   return (
     <div
       id="projects"
@@ -16,9 +28,19 @@ function Projects() {
         </span>
       </div>
       <div className="bg-primary-color">
-        <div className="projects-container grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-8  bg-primary-color px-4 tablet:px-8 sm:px-10 py-6 lg:px-32">
+        <motion.div
+          className="projects-container grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-8  bg-primary-color px-4 tablet:px-8 sm:px-10 py-6 lg:px-32"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={container}
+        >
           {projects.map((item) => (
-            <article key={item.id} className="project-item p-4 bg-white">
+            <motion.article
+              key={item.id}
+              className="project-item p-4 bg-white"
+              variants={childVariant}
+            >
               <div className="project-img ">
                 <img
                   className="static rounded-2xl"
@@ -56,9 +78,9 @@ function Projects() {
                   </button>
                 </a>
               </div>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
 
         <div className="header-footer ">
           <img src={headerFooter} alt="" />

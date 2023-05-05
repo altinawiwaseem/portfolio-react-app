@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import profileImg from "../../assets/myImg/profileImg.jpg";
 import headerFooter from "../../assets/shape-bg.png";
 import TypeIt from "typeit-react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -17,7 +18,17 @@ const Header = () => {
           <Navbar />
         </div>
         <div className="profile-parent flex flex-col-reverse tablet:flex-row w-screen p-4 h-full sm:p-8 ">
-          <div className="profile-details w-full h-full flex flex-col items-center  sm:justify-center ">
+          <motion.div
+            className="profile-details w-full h-full flex flex-col items-center  sm:justify-center "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="colz sm:w-2/5 p-4 w-full">
               <div className="colz-icon  flex justify-around text-2xl md:text-3xl text-white ">
                 <a
@@ -101,8 +112,18 @@ const Header = () => {
                 <button className="btn highlighted-btn"> Get Resume</button>
               </a>
             </div>
-          </div>
-          <div className="profile-pic w-full h-full md:w-2/3 flex justify-center items-center px-4">
+          </motion.div>
+          <motion.div
+            className="profile-pic w-full h-full md:w-2/3 flex justify-center items-center px-4"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="profile-pic-border  flex justify-center items-center tablet:w-[280px] tablet:h-[280px] sm:h-[360px] sm:w-[360px] h-[300px] w-[300px] lg:h-[380px] lg:w-[380px]">
               <img
                 className="profile-img w-[92%] h-[92%]"
@@ -110,7 +131,7 @@ const Header = () => {
                 alt="myPic"
               />{" "}
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="header-footer ">
           <img src={headerFooter} alt="" />
