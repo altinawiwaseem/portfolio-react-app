@@ -12,6 +12,8 @@ import portfolioStatic from "../src/assets/img/portfolio.png";
 import portfolioGif from "../src/assets/img/portfolio.gif";
 import cartGif from "../src/assets/img/shoppingCart.gif";
 import cartStatic from "../src/assets/img/ShoppingCart.png";
+import newsGif from "../src/assets/img/news.gif";
+import newsStatic from "../src/assets/img/news.png";
 
 export const resumeData = [
   {
@@ -133,6 +135,16 @@ export const projects = [
   },
   {
     id: 2,
+    title: "News Aggregator",
+    github: "https://github.com/altinawiwaseem/news-aggregator",
+    link: "https://github.com/altinawiwaseem/news-aggregator",
+    detail:
+      "web application that aggregates news articles from three API sources, allows users to search for news  using various methods, save their search preferences.",
+    imgStatic: newsStatic,
+    imgGif: newsGif,
+  },
+  {
+    id: 3,
     title: "Covid-19 Tracker ",
     github: "https://github.com/altinawiwaseem/COVID-19-Traker-react-app",
     link: "https://covid-19-traker-react-6mpkbu00r-altinawiwaseem.vercel.app/",
@@ -142,7 +154,7 @@ export const projects = [
     imgGif: covidGif,
   },
   {
-    id: 3,
+    id: 4,
     title: "Message Board",
     github: "https://github.com/altinawiwaseem/message-Board",
     link: "https://github.com/altinawiwaseem/message-Board",
@@ -152,7 +164,7 @@ export const projects = [
     imgGif: messageboardGif,
   },
   {
-    id: 4,
+    id: 5,
     title: "PHP Shopping Cart ",
     github: "https://github.com/altinawiwaseem/php-shopping-cart",
     link: "https://github.com/altinawiwaseem/php-shopping-cart",
@@ -161,7 +173,7 @@ export const projects = [
     imgGif: cartGif,
   },
   {
-    id: 5,
+    id: 6,
     title: "Netflix Clone",
     github: "https://github.com/altinawiwaseem/NETFLIX_CLONE",
     link: "https://netflix-clone-react-proj-91d29.web.app/",
@@ -170,7 +182,7 @@ export const projects = [
     imgGif: netflixGif,
   },
   {
-    id: 6,
+    id: 7,
     title: "Portfolio ",
     github: "https://github.com/altinawiwaseem/portfolio-v1",
     link: "https://altinawiwaseem.github.io/portfolio-v1/",
