@@ -139,7 +139,7 @@ export const projects = [
     github: "https://github.com/altinawiwaseem/news-aggregator",
     link: "https://github.com/altinawiwaseem/news-aggregator",
     detail:
-      "React, Laravel Dockerized web application that aggregates news articles from three API sources, allows users to search for news  using various methods, save their search preferences.",
+      "React, Laravel Dockerized web application that aggregates news articles from three API sources, allows users to search for news  using various methods,and save their search preferences in a preferences dashboard.",
     imgStatic: newsStatic,
     imgGif: newsGif,
   },
