@@ -53,7 +53,7 @@ function Projects() {
                 <h3 className="project-title mt-5 mb-2 text-dark-orange font-poppins-semibold  text-lg ">
                   {item.title}
                 </h3>
-                <p className="  font-poppins-medium  text-sm sm:text-base">
+                <p className="  font-poppins-medium  text-sm sm:text-base h-full">
                   {item.detail}
                 </p>
                 <div className="project-links flex  mb-4 mt-auto">
