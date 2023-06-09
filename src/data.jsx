@@ -31,7 +31,7 @@ export const resumeData = [
         headerDescription:
           "Master's degree Anglophone Modernities in Literartur and   Culture",
         detail: "University of Potdam ",
-        date: "2018 till now",
+        date: "2018 to 2023",
       },
       {
         headerDescription: "Bachelor's degree in English Literature",
@@ -52,7 +52,7 @@ export const resumeData = [
       },
       {
         headerDescription: "Salesman at “Kamps Bäckerei“",
-        date: "2020 till now",
+        date: "2020 to 2023",
       },
       {
         headerDescription: "Coordinator at “Saudi Arabia Embassy“",
