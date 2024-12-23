@@ -46,26 +46,23 @@ export const resumeData = [
     icon: <FaHistory />,
     title: [
       {
+        headerDescription: "Developer at “Jservice“",
+        date: "2023 Till Now",
+      },
+      {
         headerDescription:
           "Laravel Developer and API Integration internship at “e-Commeleon“",
         date: "01/2023 02/2023",
       },
+
       {
-        headerDescription: "Salesman at “Kamps Bäckerei“",
-        date: "2020 to 2023",
-      },
-      {
-        headerDescription: "Coordinator at “Saudi Arabia Embassy“",
+        headerDescription: "IT Support Specialist at “Saudi Arabia Embassy“",
         date: "2019 to 2020",
       },
       {
         headerDescription:
           "Provide technical support and maintain computer systems (IT) at “Fannat Company“",
         date: "2010 to 2015",
-      },
-      {
-        headerDescription: "Customer Service at “Kadmous Company“",
-        date: "2007 to 2010",
       },
     ],
   },
@@ -84,7 +81,7 @@ export const resumeData = [
       },
       {
         skill: "Sass",
-        level: 4.5,
+        level: 4.8,
       },
       {
         skill: "JavaScript",
@@ -94,6 +91,11 @@ export const resumeData = [
         skill: "React",
         level: 5.4,
       },
+      {
+        skill: "Python",
+        level: 4.2,
+      },
+
       {
         skill: "Node js",
         level: 4.9,
@@ -108,7 +110,7 @@ export const resumeData = [
       },
       {
         skill: "Express Js",
-        level: 4.4,
+        level: 4.9,
       },
       {
         skill: "PHP",
@@ -116,7 +118,7 @@ export const resumeData = [
       },
       {
         skill: "Laravel",
-        level: 4,
+        level: 4.5,
       },
     ],
   },
@@ -180,15 +182,6 @@ export const projects = [
     detail: "Netflix clone project to mimic Netflix website",
     imgStatic: netflixStatic,
     imgGif: netflixGif,
-  },
-  {
-    id: 7,
-    title: "Portfolio ",
-    github: "https://github.com/altinawiwaseem/portfolio-v1",
-    link: "https://altinawiwaseem.github.io/portfolio-v1/",
-    detail: "A personal portfolio App using HTML & SASS",
-    imgStatic: portfolioStatic,
-    imgGif: portfolioGif,
   },
 ];
 
