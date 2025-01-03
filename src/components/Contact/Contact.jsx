@@ -37,7 +37,7 @@ const Contact = () => {
       })
       .catch((error) => {
         toast.error(`Failed to send the message: `);
-        e.target.reset(); // Reset the form
+        e.target.reset(); // To Reset the form
       });
   };
 
